@@ -1,0 +1,370 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradient nền ấm áp */
+  color: #fff;
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Tạo hiệu ứng đổ bóng */
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #ffed87; /* Màu vàng nhạt */
+}
+
+.three {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng đổ bóng */
+}
+
+.four .text-box {
+  border: 3px solid #ffd700; /* Màu vàng tươi */
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền mờ */
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  color: #333;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: #ff6347; /* Màu cam đậm */
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text-box .fake-btn:hover {
+  background-color: #ff4500; /* Màu cam sáng hơn khi hover */
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  color: #f7f7f7;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #ff6347;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+  color: #00b8d4;
+}
+
+.idea-5 span, .idea-6 span, .wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 15rem;
+  color: #f9e84e; /* Màu vàng sáng */
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+}
+
+.six .hat {
+  left: 41.5%;
+  position: absolute;
+  top: -35%;
+  width: 80px;
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  fill: #ff6347; /* Màu cam */
+  left: 5vw;
+  top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+  fill: #ffdd44; /* Màu vàng sáng */
+  left: 35vw;
+  top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+  fill: #ff4500; /* Màu cam đậm */
+  left: 23vw;
+  top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+  fill: #ff8c00; /* Màu cam sáng */
+  left: 57vw;
+  top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+  fill: #c66053; /* Màu đỏ đất */
+  left: 7vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+  fill: #ffd700; /* Màu vàng */
+  left: 77vw;
+  top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+  fill: #e3bae8; /* Màu tím nhạt */
+  left: 83vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+  fill: #8762cb; /* Màu tím */
+  left: 37vw;
+  top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+  fill: #9a90da; /* Màu xanh nhạt */
+  left: 87vw;
+  top: 94vh;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffed87; /* Màu vàng nhạt */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Tạo hiệu ứng đổ bóng */
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+  color: #ff6347; /* Màu cam */
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #f7f7f7;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #ff4500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#replay:hover {
+  background-color: #ff6347;
+}
+
+/* Media Queries */
+@media screen and (max-height: 1000px) {
+  .six .hat {
+    left: 40%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .six .hat {
+    left: 37%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .six .hat {
+    left: 32%;
+  }
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .six .hat {
+    left: 32%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  .four .text-box {
+    width: 90%;
+  }
+
+  .text-box .fake-btn {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .idea-5 span {
+    display: block;
+  }
+
+  .idea-6 span {
+    font-size: 10rem;
+  }
+
+  .six .hat {
+    width: 50px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/clouds.png'); /* Tải đám mây hình ảnh SVG hoặc PNG */
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: clouds 20s linear infinite;
+}
+
+@keyframes clouds {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+.balloons {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 1;
+}
+
+.balloons img {
+  width: 50px;
+  position: absolute;
+  animation: floatBalloon 10s linear infinite;
+}
+
+@keyframes floatBalloon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+.light-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, rgba(0, 0, 0, 0) 40%);
+  animation: glowEffect 5s ease-in-out infinite;
+}
+
+@keyframes glowEffect {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
